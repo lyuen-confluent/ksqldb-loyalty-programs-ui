@@ -2,7 +2,12 @@
     "name": "ksqldb-loyalty-programs-ui",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-kafkajs": "0.0.7",
+        "node-red-contrib-random-item": "1.0.3",
+        "node-red-dashboard": "3.1.7",
+        "node-red-node-ui-table": "0.4.3"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
