@@ -880,7 +880,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 800,
-        "y": 580,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -891,7 +891,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "x": 380,
-        "y": 600,
+        "y": 1180,
         "wires": [
             [
                 "3167fbc986b1857d"
@@ -929,7 +929,7 @@
         "payload": "{\"sql\":\"select count(user_id) as USER_COUNT, reward_level from sales_totals group by reward_level emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
         "x": 150,
-        "y": 600,
+        "y": 1180,
         "wires": [
             [
                 "97add0626c5f1236"
@@ -954,7 +954,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 640,
+        "y": 1220,
         "wires": [
             [
                 "97add0626c5f1236"
@@ -988,7 +988,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 580,
+        "y": 1160,
         "wires": [
             [
                 "5ed9eddfc32d9504"
@@ -1891,7 +1891,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 370,
+        "x": 470,
         "y": 480,
         "wires": [
             []
@@ -1916,7 +1916,7 @@
         "className": "",
         "topicType": "msg",
         "x": 160,
-        "y": 1080,
+        "y": 540,
         "wires": [
             [
                 "97da1cabef9d39e3"
@@ -1943,7 +1943,7 @@
         "to": "",
         "reg": false,
         "x": 470,
-        "y": 1080,
+        "y": 540,
         "wires": [
             []
         ]
@@ -1955,7 +1955,7 @@
         "name": "sample messages",
         "info": "下一杯免費\nnext round free",
         "x": 150,
-        "y": 1120,
+        "y": 580,
         "wires": []
     },
     {
@@ -2007,7 +2007,7 @@
         "payload": "下一杯免費",
         "payloadType": "str",
         "x": 140,
-        "y": 1160,
+        "y": 620,
         "wires": [
             [
                 "97da1cabef9d39e3"
@@ -2587,7 +2587,7 @@
         "payload": "[]",
         "payloadType": "json",
         "x": 610,
-        "y": 620,
+        "y": 1200,
         "wires": [
             [
                 "5ed9eddfc32d9504"
@@ -2631,7 +2631,7 @@
         "name": "Click to start",
         "info": "",
         "x": 70,
-        "y": 560,
+        "y": 1140,
         "wires": []
     },
     {
@@ -2702,7 +2702,7 @@
         "payload": "free coffee next time",
         "payloadType": "str",
         "x": 180,
-        "y": 1200,
+        "y": 660,
         "wires": [
             [
                 "97da1cabef9d39e3"
