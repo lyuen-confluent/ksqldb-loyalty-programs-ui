@@ -1150,10 +1150,10 @@
         "z": "2f5fe38677691ef5",
         "name": "Say it",
         "group": "5bafb853165113e1",
-        "voice": "Google US English",
+        "voice": "Google 粤語（香港）",
         "always": true,
         "x": 1050,
-        "y": 720,
+        "y": 700,
         "wires": []
     },
     {
@@ -1224,7 +1224,7 @@
         "repair": false,
         "outputs": 1,
         "x": 610,
-        "y": 720,
+        "y": 700,
         "wires": [
             [
                 "ccda48f4d0b15be9"
@@ -1280,7 +1280,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 940,
+        "y": 900,
         "wires": []
     },
     {
@@ -1342,11 +1342,11 @@
                 "vt": "str"
             }
         ],
-        "checkall": "true",
+        "checkall": "false",
         "repair": false,
         "outputs": 10,
         "x": 770,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
                 "d65f1f483e1ac06b"
@@ -1407,7 +1407,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
                 "d1ecf2d1a579cf30"
@@ -1438,7 +1438,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 780,
+        "y": 740,
         "wires": []
     },
     {
@@ -1465,7 +1465,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 820,
+        "y": 780,
         "wires": []
     },
     {
@@ -1492,7 +1492,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 860,
+        "y": 820,
         "wires": []
     },
     {
@@ -1519,7 +1519,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 900,
+        "y": 860,
         "wires": []
     },
     {
@@ -1546,7 +1546,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 980,
+        "y": 940,
         "wires": []
     },
     {
@@ -1573,7 +1573,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 1020,
+        "y": 980,
         "wires": []
     },
     {
@@ -1600,7 +1600,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 1060,
+        "y": 1020,
         "wires": []
     },
     {
@@ -1627,7 +1627,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 1100,
+        "y": 1060,
         "wires": []
     },
     {
@@ -1654,7 +1654,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 1140,
+        "y": 1100,
         "wires": []
     },
     {
@@ -1737,7 +1737,7 @@
         "to": "",
         "reg": false,
         "x": 780,
-        "y": 720,
+        "y": 700,
         "wires": [
             [
                 "352d0ffc90b9c5f9"
@@ -2119,7 +2119,7 @@
                 "vt": "str"
             }
         ],
-        "checkall": "true",
+        "checkall": "false",
         "repair": false,
         "outputs": 4,
         "x": 590,
