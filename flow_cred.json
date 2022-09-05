@@ -1,1 +1,6 @@
-{}
+{
+    "800c148c15793939": {
+        "saslusername": "${ENV_API_KEY}",
+        "saslpassword": "${ENV_API_SECRET}"
+    }
+}
