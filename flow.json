@@ -543,7 +543,7 @@
         "type": "subflow:b5f2ce16d84d7dda",
         "z": "2f5fe38677691ef5",
         "name": "",
-        "x": 320,
+        "x": 360,
         "y": 100,
         "wires": [
             [
@@ -579,7 +579,7 @@
         "topic": "",
         "payload": "{\"sql\":\"select * from users;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
-        "x": 90,
+        "x": 130,
         "y": 100,
         "wires": [
             [
@@ -592,7 +592,7 @@
         "type": "subflow:b5f2ce16d84d7dda",
         "z": "2f5fe38677691ef5",
         "name": "",
-        "x": 320,
+        "x": 360,
         "y": 160,
         "wires": [
             [
@@ -628,7 +628,7 @@
         "topic": "",
         "payload": "{\"sql\":\"select * from products;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
-        "x": 100,
+        "x": 140,
         "y": 160,
         "wires": [
             [
@@ -655,7 +655,7 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 670,
+        "x": 710,
         "y": 100,
         "wires": [
             [
@@ -674,7 +674,7 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('users',[])",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 560,
         "y": 100,
         "wires": [
             [
@@ -693,7 +693,7 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('products', [])",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 560,
         "y": 160,
         "wires": [
             [
@@ -726,7 +726,7 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 680,
+        "x": 720,
         "y": 160,
         "wires": [
             [
@@ -750,7 +750,7 @@
         "transactiontimeout": 60000,
         "metadatamaxage": 300000,
         "allowautotopiccreation": false,
-        "x": 1190,
+        "x": 1230,
         "y": 400,
         "wires": []
     },
@@ -774,7 +774,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 100,
+        "x": 140,
         "y": 440,
         "wires": [
             [
@@ -801,7 +801,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 870,
+        "x": 910,
         "y": 100,
         "wires": [
             []
@@ -833,7 +833,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 860,
+        "x": 900,
         "y": 440,
         "wires": [
             [
@@ -879,7 +879,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 760,
+        "x": 800,
         "y": 580,
         "wires": [
             []
@@ -890,7 +890,7 @@
         "type": "subflow:788f5c6dd1a16320",
         "z": "2f5fe38677691ef5",
         "name": "",
-        "x": 340,
+        "x": 380,
         "y": 600,
         "wires": [
             [
@@ -928,7 +928,7 @@
         "topic": "",
         "payload": "{\"sql\":\"select count(user_id) as USER_COUNT, reward_level from sales_totals group by reward_level emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
-        "x": 110,
+        "x": 150,
         "y": 600,
         "wires": [
             [
@@ -953,7 +953,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 90,
+        "x": 130,
         "y": 640,
         "wires": [
             [
@@ -987,7 +987,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 600,
         "y": 580,
         "wires": [
             [
@@ -1005,7 +1005,7 @@
         "output": "payload",
         "outputType": "msg",
         "number": 1,
-        "x": 370,
+        "x": 410,
         "y": 340,
         "wires": [
             [
@@ -1023,7 +1023,7 @@
         "output": "payload",
         "outputType": "msg",
         "number": 1,
-        "x": 380,
+        "x": 420,
         "y": 400,
         "wires": [
             [
@@ -1051,7 +1051,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 730,
+        "x": 770,
         "y": 360,
         "wires": [
             [
@@ -1081,7 +1081,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
+        "x": 170,
         "y": 340,
         "wires": [
             [
@@ -1109,7 +1109,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 600,
         "y": 340,
         "wires": [
             [
@@ -1136,7 +1136,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 600,
         "y": 400,
         "wires": [
             [
@@ -1152,7 +1152,7 @@
         "group": "5bafb853165113e1",
         "voice": "Google US English",
         "always": true,
-        "x": 1010,
+        "x": 1050,
         "y": 720,
         "wires": []
     },
@@ -1161,7 +1161,7 @@
         "type": "subflow:788f5c6dd1a16320",
         "z": "2f5fe38677691ef5",
         "name": "",
-        "x": 340,
+        "x": 380,
         "y": 780,
         "wires": [
             [
@@ -1200,7 +1200,7 @@
         "topic": "",
         "payload": "{\"sql\":\"select * from caffeine_index emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"latest\"}}",
         "payloadType": "str",
-        "x": 110,
+        "x": 150,
         "y": 780,
         "wires": [
             [
@@ -1223,7 +1223,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 570,
+        "x": 610,
         "y": 720,
         "wires": [
             [
@@ -1248,7 +1248,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 90,
+        "x": 130,
         "y": 820,
         "wires": [
             [
@@ -1279,7 +1279,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 940,
         "wires": []
     },
@@ -1345,7 +1345,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 10,
-        "x": 730,
+        "x": 770,
         "y": 940,
         "wires": [
             [
@@ -1406,7 +1406,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 600,
         "y": 940,
         "wires": [
             [
@@ -1437,7 +1437,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 780,
         "wires": []
     },
@@ -1464,7 +1464,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 820,
         "wires": []
     },
@@ -1491,7 +1491,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 860,
         "wires": []
     },
@@ -1518,7 +1518,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 900,
         "wires": []
     },
@@ -1545,7 +1545,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 980,
         "wires": []
     },
@@ -1572,7 +1572,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 1020,
         "wires": []
     },
@@ -1599,7 +1599,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 1060,
         "wires": []
     },
@@ -1626,7 +1626,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 1100,
         "wires": []
     },
@@ -1653,7 +1653,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1010,
+        "x": 1050,
         "y": 1140,
         "wires": []
     },
@@ -1663,7 +1663,7 @@
         "z": "2f5fe38677691ef5",
         "name": "Simulate Purchase",
         "info": "",
-        "x": 110,
+        "x": 150,
         "y": 260,
         "wires": []
     },
@@ -1693,7 +1693,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 860,
+        "x": 900,
         "y": 360,
         "wires": [
             [
@@ -1709,7 +1709,7 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 990,
+        "x": 1030,
         "y": 360,
         "wires": [
             [
@@ -1736,7 +1736,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
+        "x": 780,
         "y": 720,
         "wires": [
             [
@@ -1763,7 +1763,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
+        "x": 920,
         "y": 160,
         "wires": [
             []
@@ -1777,7 +1777,7 @@
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 990,
+        "x": 1030,
         "y": 440,
         "wires": [
             [
@@ -1800,7 +1800,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 270,
+        "x": 310,
         "y": 300,
         "wires": [
             [
@@ -1830,7 +1830,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
+        "x": 160,
         "y": 300,
         "wires": [
             [
@@ -1864,7 +1864,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 110,
+        "x": 150,
         "y": 480,
         "wires": [
             [
@@ -1891,7 +1891,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
+        "x": 370,
         "y": 480,
         "wires": [
             []
@@ -1915,7 +1915,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 120,
+        "x": 160,
         "y": 1080,
         "wires": [
             [
@@ -1942,7 +1942,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
+        "x": 470,
         "y": 1080,
         "wires": [
             []
@@ -1954,7 +1954,7 @@
         "z": "2f5fe38677691ef5",
         "name": "sample messages",
         "info": "下一杯免費\nnext round free",
-        "x": 110,
+        "x": 150,
         "y": 1120,
         "wires": []
     },
@@ -1977,7 +1977,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
+        "x": 520,
         "y": 300,
         "wires": [
             [
@@ -2006,7 +2006,7 @@
         "topic": "",
         "payload": "下一杯免費",
         "payloadType": "str",
-        "x": 100,
+        "x": 140,
         "y": 1160,
         "wires": [
             [
@@ -2019,7 +2019,7 @@
         "type": "subflow:788f5c6dd1a16320",
         "z": "2f5fe38677691ef5",
         "name": "",
-        "x": 340,
+        "x": 380,
         "y": 1340,
         "wires": [
             [
@@ -2057,7 +2057,7 @@
         "topic": "",
         "payload": "{\"sql\":\"select * from sales_totals emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
-        "x": 110,
+        "x": 150,
         "y": 1340,
         "wires": [
             [
@@ -2082,7 +2082,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 90,
+        "x": 130,
         "y": 1380,
         "wires": [
             [
@@ -2122,7 +2122,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 550,
+        "x": 590,
         "y": 1340,
         "wires": [
             [
@@ -2175,7 +2175,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1100,
+        "x": 1140,
         "y": 1280,
         "wires": []
     },
@@ -2198,7 +2198,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
+        "x": 810,
         "y": 1280,
         "wires": [
             [
@@ -2239,7 +2239,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1100,
+        "x": 1140,
         "y": 1360,
         "wires": []
     },
@@ -2276,7 +2276,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1090,
+        "x": 1130,
         "y": 1440,
         "wires": []
     },
@@ -2313,7 +2313,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1090,
+        "x": 1130,
         "y": 1520,
         "wires": []
     },
@@ -2336,7 +2336,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
+        "x": 810,
         "y": 1360,
         "wires": [
             [
@@ -2363,7 +2363,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
+        "x": 810,
         "y": 1440,
         "wires": [
             [
@@ -2390,7 +2390,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
+        "x": 810,
         "y": 1520,
         "wires": [
             [
@@ -2419,7 +2419,7 @@
         "topic": "",
         "payload": "[]",
         "payloadType": "json",
-        "x": 790,
+        "x": 830,
         "y": 1620,
         "wires": [
             [
@@ -2451,7 +2451,7 @@
         "topic": "index",
         "payload": "USER_ID",
         "payloadType": "str",
-        "x": 530,
+        "x": 570,
         "y": 1660,
         "wires": [
             [
@@ -2470,7 +2470,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
+        "x": 800,
         "y": 1660,
         "wires": [
             [
@@ -2500,7 +2500,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
+        "x": 790,
         "y": 1320,
         "wires": [
             [
@@ -2527,7 +2527,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
+        "x": 790,
         "y": 1400,
         "wires": [
             [
@@ -2555,7 +2555,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
+        "x": 790,
         "y": 1480,
         "wires": [
             [
@@ -2586,7 +2586,7 @@
         "topic": "",
         "payload": "[]",
         "payloadType": "json",
-        "x": 570,
+        "x": 610,
         "y": 620,
         "wires": [
             [
@@ -2600,7 +2600,7 @@
         "z": "2f5fe38677691ef5",
         "name": "Initalize Dropdown",
         "info": "",
-        "x": 110,
+        "x": 150,
         "y": 60,
         "wires": []
     },
@@ -2610,7 +2610,7 @@
         "z": "2f5fe38677691ef5",
         "name": "Click to start",
         "info": "Click \"Reward Level\" to start",
-        "x": 90,
+        "x": 70,
         "y": 1300,
         "wires": []
     },
@@ -2620,7 +2620,7 @@
         "z": "2f5fe38677691ef5",
         "name": "Click to start",
         "info": "",
-        "x": 90,
+        "x": 70,
         "y": 740,
         "wires": []
     },
@@ -2630,7 +2630,7 @@
         "z": "2f5fe38677691ef5",
         "name": "Click to start",
         "info": "",
-        "x": 90,
+        "x": 70,
         "y": 560,
         "wires": []
     },
@@ -2654,7 +2654,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
+        "x": 150,
         "y": 400,
         "wires": [
             [
@@ -2676,7 +2676,7 @@
         "format": "{{msg.payload.user}} buys {{msg.payload.product}} ",
         "layout": "col-center",
         "className": "",
-        "x": 880,
+        "x": 920,
         "y": 320,
         "wires": []
     },
@@ -2701,7 +2701,7 @@
         "topic": "",
         "payload": "free coffee next time",
         "payloadType": "str",
-        "x": 140,
+        "x": 180,
         "y": 1200,
         "wires": [
             [
