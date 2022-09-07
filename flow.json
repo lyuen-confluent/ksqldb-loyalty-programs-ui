@@ -2716,7 +2716,7 @@
         "type": "subflow:788f5c6dd1a16320",
         "z": "2f5fe38677691ef5",
         "name": "",
-        "x": 400,
+        "x": 440,
         "y": 1800,
         "wires": [
             [
@@ -2756,7 +2756,7 @@
         "payload": "{\"sql\":\"select * from promotion_french_poodle emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"latest\"}}",
         "payloadType": "str",
         "x": 170,
-        "y": 1780,
+        "y": 1800,
         "wires": [
             [
                 "df260058f66e8a06"
@@ -2854,7 +2854,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 730,
         "y": 1780,
         "wires": [
             [
@@ -2893,7 +2893,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
+        "x": 700,
         "y": 1820,
         "wires": [
             [
@@ -2908,7 +2908,7 @@
         "name": "Click to start",
         "info": "Click \"Reward Level\" to start",
         "x": 70,
-        "y": 1740,
+        "y": 1760,
         "wires": []
     }
 ]
