@@ -154,7 +154,7 @@
         "type": "ui_group",
         "name": "Buy Something",
         "tab": "0b847fb3d37f09fe",
-        "order": 5,
+        "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -189,7 +189,7 @@
         "type": "ui_group",
         "name": "Member Reward",
         "tab": "0b847fb3d37f09fe",
-        "order": 4,
+        "order": 2,
         "disp": true,
         "width": "10",
         "collapse": false,
@@ -211,7 +211,7 @@
         "type": "ui_group",
         "name": "Sales Totals",
         "tab": "0b847fb3d37f09fe",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": "20",
         "collapse": false,
@@ -568,7 +568,7 @@
             },
             {
                 "p": "url",
-                "v": "http://192.168.1.237:8088/query-stream",
+                "v": "http://ksqldb-server:8088/query-stream",
                 "vt": "str"
             }
         ],
@@ -617,7 +617,7 @@
             },
             {
                 "p": "url",
-                "v": "http://192.168.1.237:8088/query-stream",
+                "v": "http://ksqldb-server:8088/query-stream",
                 "vt": "str"
             }
         ],
@@ -912,7 +912,7 @@
             },
             {
                 "p": "url",
-                "v": "http://192.168.1.237:8088/query-stream",
+                "v": "http://ksqldb-server:8088/query-stream",
                 "vt": "str"
             },
             {
@@ -1184,7 +1184,7 @@
             },
             {
                 "p": "url",
-                "v": "http://192.168.1.237:8088/query-stream",
+                "v": "http://ksqldb-server:8088/query-stream",
                 "vt": "str"
             },
             {
@@ -2041,7 +2041,7 @@
             },
             {
                 "p": "url",
-                "v": "http://192.168.1.237:8088/query-stream",
+                "v": "http://ksqldb-server:8088/query-stream",
                 "vt": "str"
             },
             {
@@ -2419,14 +2419,15 @@
         "topic": "",
         "payload": "[]",
         "payloadType": "json",
-        "x": 830,
+        "x": 850,
         "y": 1620,
         "wires": [
             [
                 "0e0bf7cbef1ba72a",
                 "ef5d2e03bccb7b46",
                 "a61c5c3fe896d160",
-                "e0dfa308adfaf9d6"
+                "e0dfa308adfaf9d6",
+                "530ad49d80ce77ba"
             ]
         ]
     },
@@ -2470,14 +2471,15 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
+        "x": 820,
         "y": 1660,
         "wires": [
             [
                 "0e0bf7cbef1ba72a",
                 "ef5d2e03bccb7b46",
                 "a61c5c3fe896d160",
-                "e0dfa308adfaf9d6"
+                "e0dfa308adfaf9d6",
+                "530ad49d80ce77ba"
             ]
         ]
     },
@@ -2708,5 +2710,205 @@
                 "97da1cabef9d39e3"
             ]
         ]
+    },
+    {
+        "id": "df260058f66e8a06",
+        "type": "subflow:788f5c6dd1a16320",
+        "z": "2f5fe38677691ef5",
+        "name": "",
+        "x": 400,
+        "y": 1800,
+        "wires": [
+            [
+                "0daa7b5052f34ee5",
+                "6cb1a054454ef805"
+            ],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b286eaa082941b55",
+        "type": "inject",
+        "z": "2f5fe38677691ef5",
+        "name": "Special Promotion",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "url",
+                "v": "http://ksqldb-server:8088/query-stream",
+                "vt": "str"
+            },
+            {
+                "p": "queryName",
+                "v": "specialPromo",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"sql\":\"select * from promotion_french_poodle emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"latest\"}}",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1780,
+        "wires": [
+            [
+                "df260058f66e8a06"
+            ]
+        ]
+    },
+    {
+        "id": "4ce720a790452199",
+        "type": "inject",
+        "z": "2f5fe38677691ef5",
+        "name": "Stop",
+        "props": [
+            {
+                "p": "kill",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 1840,
+        "wires": [
+            [
+                "df260058f66e8a06"
+            ]
+        ]
+    },
+    {
+        "id": "530ad49d80ce77ba",
+        "type": "ui_table",
+        "z": "2f5fe38677691ef5",
+        "group": "4a9750d76458eeff",
+        "name": "Special Promotion",
+        "order": 1,
+        "width": "10",
+        "height": "5",
+        "columns": [
+            {
+                "field": "USER_ID",
+                "title": "Name",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "PRODUCTS",
+                "title": "Products",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "PROMOTION_NAME",
+                "title": "Promotion",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1090,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "0daa7b5052f34ee5",
+        "type": "change",
+        "z": "2f5fe38677691ef5",
+        "name": "Prep Data for Table",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"command\": \"updateOrAddData\",\t    \"arguments\": [\t        [\t            payload\t        ],\t        true\t    ],\t    \"returnPromise\": false\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 1780,
+        "wires": [
+            [
+                "530ad49d80ce77ba"
+            ]
+        ]
+    },
+    {
+        "id": "a4a28e19cc47ec6c",
+        "type": "ui_audio",
+        "z": "2f5fe38677691ef5",
+        "name": "",
+        "group": "5bafb853165113e1",
+        "voice": "Alex",
+        "always": "",
+        "x": 1060,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "6cb1a054454ef805",
+        "type": "change",
+        "z": "2f5fe38677691ef5",
+        "name": "Prep Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Special Promotion for \" & payload.USER_ID",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1820,
+        "wires": [
+            [
+                "a4a28e19cc47ec6c"
+            ]
+        ]
+    },
+    {
+        "id": "05cd37d64260aa5a",
+        "type": "comment",
+        "z": "2f5fe38677691ef5",
+        "name": "Click to start",
+        "info": "Click \"Reward Level\" to start",
+        "x": 70,
+        "y": 1740,
+        "wires": []
     }
 ]
