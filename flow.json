@@ -229,7 +229,7 @@
         "id": "44ae94713e178cc6",
         "type": "kafkajs-client",
         "name": "Local",
-        "brokers": "broker:29092",
+        "brokers": "broker:9092",
         "clientid": "nodered-producer-02",
         "connectiontimeout": "3000",
         "requesttimeout": "25000",
@@ -258,7 +258,8 @@
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
@@ -1370,7 +1371,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 1140,
+        "y": 1120,
         "wires": [
             [
                 "0771b9bb0c43a674"
@@ -2109,7 +2110,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "x": 380,
-        "y": 1620,
+        "y": 1680,
         "wires": [
             [
                 "470d00450056a0c0"
@@ -2147,7 +2148,7 @@
         "payload": "{\"sql\":\"select * from sales_totals emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
         "x": 150,
-        "y": 1620,
+        "y": 1680,
         "wires": [
             [
                 "7c543fc4b7404b6e"
@@ -2172,7 +2173,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 1660,
+        "y": 1720,
         "wires": [
             [
                 "7c543fc4b7404b6e"
@@ -2212,7 +2213,7 @@
         "repair": false,
         "outputs": 4,
         "x": 590,
-        "y": 1620,
+        "y": 1680,
         "wires": [
             [
                 "eb7d031dd527ffbe"
@@ -2702,7 +2703,7 @@
         "name": "Click to start",
         "info": "Click \"Reward Level\" to start",
         "x": 70,
-        "y": 1580,
+        "y": 1640,
         "wires": []
     },
     {
