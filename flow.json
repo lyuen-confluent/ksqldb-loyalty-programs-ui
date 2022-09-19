@@ -1001,7 +1001,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 800,
-        "y": 1160,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -1012,7 +1012,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "x": 380,
-        "y": 1180,
+        "y": 1460,
         "wires": [
             [
                 "3167fbc986b1857d"
@@ -1050,7 +1050,7 @@
         "payload": "{\"sql\":\"select count(user_id) as USER_COUNT, reward_level from sales_totals group by reward_level emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
         "x": 150,
-        "y": 1180,
+        "y": 1460,
         "wires": [
             [
                 "97add0626c5f1236"
@@ -1075,7 +1075,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 1220,
+        "y": 1500,
         "wires": [
             [
                 "97add0626c5f1236"
@@ -1109,7 +1109,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 1160,
+        "y": 1440,
         "wires": [
             [
                 "5ed9eddfc32d9504"
@@ -1269,12 +1269,12 @@
         "id": "352d0ffc90b9c5f9",
         "type": "ui_audio",
         "z": "2f5fe38677691ef5",
-        "name": "Say it",
+        "name": "Say it in Cantonese",
         "group": "5bafb853165113e1",
         "voice": "Google 粤語（香港）",
         "always": true,
-        "x": 1050,
-        "y": 700,
+        "x": 1130,
+        "y": 900,
         "wires": []
     },
     {
@@ -1283,7 +1283,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "x": 380,
-        "y": 780,
+        "y": 1100,
         "wires": [
             [
                 "06827baa2ede234d",
@@ -1322,7 +1322,7 @@
         "payload": "{\"sql\":\"select * from caffeine_index emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"latest\"}}",
         "payloadType": "str",
         "x": 150,
-        "y": 780,
+        "y": 1080,
         "wires": [
             [
                 "0771b9bb0c43a674"
@@ -1345,7 +1345,7 @@
         "repair": false,
         "outputs": 1,
         "x": 610,
-        "y": 700,
+        "y": 940,
         "wires": [
             [
                 "ccda48f4d0b15be9"
@@ -1370,7 +1370,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 820,
+        "y": 1140,
         "wires": [
             [
                 "0771b9bb0c43a674"
@@ -1383,7 +1383,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 1,
+        "order": 2,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1401,7 +1401,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 900,
+        "y": 1180,
         "wires": []
     },
     {
@@ -1467,7 +1467,7 @@
         "repair": false,
         "outputs": 10,
         "x": 770,
-        "y": 920,
+        "y": 1200,
         "wires": [
             [
                 "d65f1f483e1ac06b"
@@ -1528,7 +1528,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 920,
+        "y": 1200,
         "wires": [
             [
                 "d1ecf2d1a579cf30"
@@ -1541,7 +1541,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 7,
+        "order": 8,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1559,7 +1559,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 740,
+        "y": 1020,
         "wires": []
     },
     {
@@ -1568,7 +1568,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 8,
+        "order": 9,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1586,7 +1586,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 780,
+        "y": 1060,
         "wires": []
     },
     {
@@ -1595,7 +1595,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 10,
+        "order": 11,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1613,7 +1613,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 820,
+        "y": 1100,
         "wires": []
     },
     {
@@ -1622,7 +1622,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 9,
+        "order": 10,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1640,7 +1640,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 860,
+        "y": 1140,
         "wires": []
     },
     {
@@ -1649,7 +1649,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 2,
+        "order": 3,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1667,7 +1667,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 940,
+        "y": 1220,
         "wires": []
     },
     {
@@ -1676,7 +1676,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 3,
+        "order": 4,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1694,7 +1694,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 980,
+        "y": 1260,
         "wires": []
     },
     {
@@ -1703,7 +1703,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 4,
+        "order": 5,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1721,7 +1721,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 1020,
+        "y": 1300,
         "wires": []
     },
     {
@@ -1730,7 +1730,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 5,
+        "order": 6,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1748,7 +1748,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 1060,
+        "y": 1340,
         "wires": []
     },
     {
@@ -1757,7 +1757,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "group": "5bafb853165113e1",
-        "order": 6,
+        "order": 7,
         "width": "4",
         "height": "4",
         "gtype": "gage",
@@ -1775,7 +1775,7 @@
         "seg2": "",
         "className": "",
         "x": 1050,
-        "y": 1100,
+        "y": 1380,
         "wires": []
     },
     {
@@ -1850,6 +1850,13 @@
                 "pt": "msg",
                 "to": "\"Thank you \" & payload.USER_ID & \" \" & $flowContext('coffeeMsg')",
                 "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "coffeeMsgLang",
+                "tot": "flow"
             }
         ],
         "action": "",
@@ -1857,11 +1864,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 700,
+        "x": 760,
+        "y": 940,
         "wires": [
             [
-                "352d0ffc90b9c5f9"
+                "e1a32e4deacbed5f"
             ]
         ]
     },
@@ -1967,7 +1974,7 @@
         "label": "Let's Buy Coffee",
         "tooltip": "",
         "group": "5bafb853165113e1",
-        "order": 11,
+        "order": 12,
         "width": "4",
         "height": "1",
         "passthru": true,
@@ -2023,10 +2030,10 @@
         "type": "ui_text_input",
         "z": "2f5fe38677691ef5",
         "name": "",
-        "label": "Message to Customer",
+        "label": "Type Your Message",
         "tooltip": "",
         "group": "5bafb853165113e1",
-        "order": 12,
+        "order": 15,
         "width": "0",
         "height": "0",
         "passthru": true,
@@ -2036,8 +2043,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 160,
-        "y": 540,
+        "x": 150,
+        "y": 680,
         "wires": [
             [
                 "97da1cabef9d39e3"
@@ -2063,21 +2070,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 540,
+        "x": 570,
+        "y": 720,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "ec0db607e6ff035b",
-        "type": "comment",
-        "z": "2f5fe38677691ef5",
-        "name": "sample messages",
-        "info": "下一杯免費\nnext round free",
-        "x": 150,
-        "y": 580,
-        "wires": []
     },
     {
         "id": "a84f5d96797ebfc0",
@@ -2107,41 +2104,12 @@
         ]
     },
     {
-        "id": "ef99fc5a33b54bdf",
-        "type": "inject",
-        "z": "2f5fe38677691ef5",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "下一杯免費",
-        "payloadType": "str",
-        "x": 140,
-        "y": 620,
-        "wires": [
-            [
-                "97da1cabef9d39e3"
-            ]
-        ]
-    },
-    {
         "id": "7c543fc4b7404b6e",
         "type": "subflow:788f5c6dd1a16320",
         "z": "2f5fe38677691ef5",
         "name": "",
         "x": 380,
-        "y": 1340,
+        "y": 1620,
         "wires": [
             [
                 "470d00450056a0c0"
@@ -2179,7 +2147,7 @@
         "payload": "{\"sql\":\"select * from sales_totals emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"earliest\"}}",
         "payloadType": "str",
         "x": 150,
-        "y": 1340,
+        "y": 1620,
         "wires": [
             [
                 "7c543fc4b7404b6e"
@@ -2204,7 +2172,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 1380,
+        "y": 1660,
         "wires": [
             [
                 "7c543fc4b7404b6e"
@@ -2244,7 +2212,7 @@
         "repair": false,
         "outputs": 4,
         "x": 590,
-        "y": 1340,
+        "y": 1620,
         "wires": [
             [
                 "eb7d031dd527ffbe"
@@ -2297,7 +2265,7 @@
         "outputs": 0,
         "cts": false,
         "x": 1140,
-        "y": 1280,
+        "y": 1560,
         "wires": []
     },
     {
@@ -2320,7 +2288,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 1280,
+        "y": 1560,
         "wires": [
             [
                 "0e0bf7cbef1ba72a"
@@ -2361,7 +2329,7 @@
         "outputs": 0,
         "cts": false,
         "x": 1140,
-        "y": 1360,
+        "y": 1640,
         "wires": []
     },
     {
@@ -2398,7 +2366,7 @@
         "outputs": 0,
         "cts": false,
         "x": 1130,
-        "y": 1440,
+        "y": 1720,
         "wires": []
     },
     {
@@ -2435,7 +2403,7 @@
         "outputs": 0,
         "cts": false,
         "x": 1130,
-        "y": 1520,
+        "y": 1800,
         "wires": []
     },
     {
@@ -2458,7 +2426,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 1360,
+        "y": 1640,
         "wires": [
             [
                 "ef5d2e03bccb7b46"
@@ -2485,7 +2453,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 1440,
+        "y": 1720,
         "wires": [
             [
                 "a61c5c3fe896d160"
@@ -2512,7 +2480,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 1520,
+        "y": 1800,
         "wires": [
             [
                 "e0dfa308adfaf9d6"
@@ -2541,7 +2509,7 @@
         "payload": "[]",
         "payloadType": "json",
         "x": 850,
-        "y": 1620,
+        "y": 1900,
         "wires": [
             [
                 "0e0bf7cbef1ba72a",
@@ -2574,7 +2542,7 @@
         "payload": "USER_ID",
         "payloadType": "str",
         "x": 570,
-        "y": 1660,
+        "y": 1940,
         "wires": [
             [
                 "4b3b72fc255c41a5"
@@ -2593,7 +2561,7 @@
         "finalize": "",
         "libs": [],
         "x": 820,
-        "y": 1660,
+        "y": 1940,
         "wires": [
             [
                 "0e0bf7cbef1ba72a",
@@ -2624,7 +2592,7 @@
         "to": "",
         "reg": false,
         "x": 790,
-        "y": 1320,
+        "y": 1600,
         "wires": [
             [
                 "0e0bf7cbef1ba72a"
@@ -2651,7 +2619,7 @@
         "to": "",
         "reg": false,
         "x": 790,
-        "y": 1400,
+        "y": 1680,
         "wires": [
             [
                 "ef5d2e03bccb7b46",
@@ -2679,7 +2647,7 @@
         "to": "",
         "reg": false,
         "x": 790,
-        "y": 1480,
+        "y": 1760,
         "wires": [
             [
                 "a61c5c3fe896d160",
@@ -2710,7 +2678,7 @@
         "payload": "[]",
         "payloadType": "json",
         "x": 610,
-        "y": 1200,
+        "y": 1480,
         "wires": [
             [
                 "5ed9eddfc32d9504"
@@ -2734,7 +2702,7 @@
         "name": "Click to start",
         "info": "Click \"Reward Level\" to start",
         "x": 70,
-        "y": 1300,
+        "y": 1580,
         "wires": []
     },
     {
@@ -2744,7 +2712,7 @@
         "name": "Click to start",
         "info": "",
         "x": 70,
-        "y": 740,
+        "y": 1040,
         "wires": []
     },
     {
@@ -2754,7 +2722,7 @@
         "name": "Click to start",
         "info": "",
         "x": 70,
-        "y": 1140,
+        "y": 1420,
         "wires": []
     },
     {
@@ -2804,41 +2772,12 @@
         "wires": []
     },
     {
-        "id": "b252809450f02427",
-        "type": "inject",
-        "z": "2f5fe38677691ef5",
-        "name": "Free coffee next time",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "free coffee next time",
-        "payloadType": "str",
-        "x": 180,
-        "y": 660,
-        "wires": [
-            [
-                "97da1cabef9d39e3"
-            ]
-        ]
-    },
-    {
         "id": "df260058f66e8a06",
         "type": "subflow:788f5c6dd1a16320",
         "z": "2f5fe38677691ef5",
         "name": "",
         "x": 440,
-        "y": 1800,
+        "y": 2080,
         "wires": [
             [
                 "0daa7b5052f34ee5",
@@ -2877,7 +2816,7 @@
         "payload": "{\"sql\":\"select * from promotion_french_poodle emit changes;\",\"properties\":{\"ksql.streams.auto.offset.reset\":\"latest\"}}",
         "payloadType": "str",
         "x": 170,
-        "y": 1800,
+        "y": 2080,
         "wires": [
             [
                 "df260058f66e8a06"
@@ -2902,7 +2841,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 130,
-        "y": 1840,
+        "y": 2120,
         "wires": [
             [
                 "df260058f66e8a06"
@@ -2953,7 +2892,7 @@
         "outputs": 0,
         "cts": false,
         "x": 1090,
-        "y": 1780,
+        "y": 2060,
         "wires": []
     },
     {
@@ -2976,7 +2915,7 @@
         "to": "",
         "reg": false,
         "x": 730,
-        "y": 1780,
+        "y": 2060,
         "wires": [
             [
                 "530ad49d80ce77ba"
@@ -2992,7 +2931,7 @@
         "voice": "Alex",
         "always": "",
         "x": 1060,
-        "y": 1820,
+        "y": 2100,
         "wires": []
     },
     {
@@ -3015,7 +2954,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 1820,
+        "y": 2100,
         "wires": [
             [
                 "a4a28e19cc47ec6c"
@@ -3029,7 +2968,216 @@
         "name": "Click to start",
         "info": "Click \"Reward Level\" to start",
         "x": 70,
-        "y": 1760,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "c584cdc03086d732",
+        "type": "ui_audio",
+        "z": "2f5fe38677691ef5",
+        "name": "Say it in Mandarin",
+        "group": "5bafb853165113e1",
+        "voice": "Google 國語（臺灣）",
+        "always": true,
+        "x": 1130,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "500f37efcb3bdf16",
+        "type": "ui_audio",
+        "z": "2f5fe38677691ef5",
+        "name": "Say it in English",
+        "group": "5bafb853165113e1",
+        "voice": "Google UK English Female",
+        "always": true,
+        "x": 1120,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "f6d501ab0b02f3bd",
+        "type": "ui_dropdown",
+        "z": "2f5fe38677691ef5",
+        "name": "",
+        "label": "Language",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5bafb853165113e1",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Cantonese",
+                "value": "cantonese",
+                "type": "str"
+            },
+            {
+                "label": "English",
+                "value": "english",
+                "type": "str"
+            },
+            {
+                "label": "Mandarin",
+                "value": "mandarin",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 120,
+        "y": 620,
+        "wires": [
+            [
+                "2a23a4c47a7f5697"
+            ]
+        ]
+    },
+    {
+        "id": "2a23a4c47a7f5697",
+        "type": "change",
+        "z": "2f5fe38677691ef5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "coffeeMsgLang",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1a32e4deacbed5f",
+        "type": "switch",
+        "z": "2f5fe38677691ef5",
+        "name": "switch language",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "cantonese",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mandarin",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "english",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 920,
+        "y": 940,
+        "wires": [
+            [
+                "352d0ffc90b9c5f9"
+            ],
+            [
+                "c584cdc03086d732"
+            ],
+            [
+                "500f37efcb3bdf16"
+            ]
+        ]
+    },
+    {
+        "id": "c9b3cff0ad0936d8",
+        "type": "ui_dropdown",
+        "z": "2f5fe38677691ef5",
+        "name": "",
+        "label": "Canned Message",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5bafb853165113e1",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "Free coffee next time",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "下一杯免費",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "8afaa42bada04e9e",
+                "97da1cabef9d39e3"
+            ]
+        ]
+    },
+    {
+        "id": "8afaa42bada04e9e",
+        "type": "change",
+        "z": "2f5fe38677691ef5",
+        "name": "clear",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 150,
+        "y": 720,
+        "wires": [
+            [
+                "8c954ad6e2287a3c"
+            ]
+        ]
+    },
+    {
+        "id": "346ed27897735c5b",
+        "type": "comment",
+        "z": "2f5fe38677691ef5",
+        "name": "Message to Customer",
+        "info": "",
+        "x": 160,
+        "y": 580,
         "wires": []
     }
 ]
