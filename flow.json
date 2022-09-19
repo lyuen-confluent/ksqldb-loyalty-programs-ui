@@ -2070,7 +2070,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
+        "x": 490,
         "y": 800,
         "wires": [
             []
@@ -3135,38 +3135,10 @@
         "topicType": "msg",
         "className": "",
         "x": 150,
-        "y": 840,
+        "y": 820,
         "wires": [
             [
-                "8afaa42bada04e9e",
                 "97da1cabef9d39e3"
-            ]
-        ]
-    },
-    {
-        "id": "8afaa42bada04e9e",
-        "type": "change",
-        "z": "2f5fe38677691ef5",
-        "name": "clear",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 150,
-        "y": 800,
-        "wires": [
-            [
-                "8c954ad6e2287a3c"
             ]
         ]
     },
@@ -3184,7 +3156,7 @@
         "id": "31808fa26b72b408",
         "type": "inject",
         "z": "2f5fe38677691ef5",
-        "name": "default to English",
+        "name": "Default to English",
         "props": [
             {
                 "p": "payload"
@@ -3197,7 +3169,7 @@
         "topic": "",
         "payload": "english",
         "payloadType": "str",
-        "x": 150,
+        "x": 170,
         "y": 680,
         "wires": [
             [
@@ -3213,10 +3185,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -3226,8 +3194,8 @@
         "topic": "",
         "payload": "free coffee next time",
         "payloadType": "str",
-        "x": 150,
-        "y": 900,
+        "x": 170,
+        "y": 860,
         "wires": [
             [
                 "97da1cabef9d39e3"
