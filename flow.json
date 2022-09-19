@@ -859,7 +859,6 @@
         "id": "7a1ba88bb9fef03b",
         "type": "kafkajs-producer",
         "z": "2f5fe38677691ef5",
-        "d": true,
         "name": "Topic: purchases",
         "client": "44ae94713e178cc6",
         "topic": "purchases",
@@ -2045,7 +2044,7 @@
         "className": "",
         "topicType": "msg",
         "x": 150,
-        "y": 680,
+        "y": 760,
         "wires": [
             [
                 "97da1cabef9d39e3"
@@ -2072,7 +2071,7 @@
         "to": "",
         "reg": false,
         "x": 570,
-        "y": 720,
+        "y": 800,
         "wires": [
             []
         ]
@@ -3136,7 +3135,7 @@
         "topicType": "msg",
         "className": "",
         "x": 150,
-        "y": 760,
+        "y": 840,
         "wires": [
             [
                 "8afaa42bada04e9e",
@@ -3164,7 +3163,7 @@
         "to": "",
         "reg": false,
         "x": 150,
-        "y": 720,
+        "y": 800,
         "wires": [
             [
                 "8c954ad6e2287a3c"
@@ -3180,5 +3179,59 @@
         "x": 160,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "31808fa26b72b408",
+        "type": "inject",
+        "z": "2f5fe38677691ef5",
+        "name": "default to English",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "english",
+        "payloadType": "str",
+        "x": 150,
+        "y": 680,
+        "wires": [
+            [
+                "2a23a4c47a7f5697"
+            ]
+        ]
+    },
+    {
+        "id": "65cd78192de09d90",
+        "type": "inject",
+        "z": "2f5fe38677691ef5",
+        "name": "Default message",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "free coffee next time",
+        "payloadType": "str",
+        "x": 150,
+        "y": 900,
+        "wires": [
+            [
+                "97da1cabef9d39e3"
+            ]
+        ]
     }
 ]
