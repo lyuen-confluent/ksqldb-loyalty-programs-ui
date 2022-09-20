@@ -1283,7 +1283,7 @@
         "z": "2f5fe38677691ef5",
         "name": "",
         "x": 380,
-        "y": 1100,
+        "y": 1080,
         "wires": [
             [
                 "06827baa2ede234d",
@@ -1400,7 +1400,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1180,
         "wires": []
     },
@@ -1558,7 +1558,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1020,
         "wires": []
     },
@@ -1585,7 +1585,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1060,
         "wires": []
     },
@@ -1612,7 +1612,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1100,
         "wires": []
     },
@@ -1639,7 +1639,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1140,
         "wires": []
     },
@@ -1666,7 +1666,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1220,
         "wires": []
     },
@@ -1693,7 +1693,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1260,
         "wires": []
     },
@@ -1720,7 +1720,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1300,
         "wires": []
     },
@@ -1747,7 +1747,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1340,
         "wires": []
     },
@@ -1774,7 +1774,7 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 1380,
         "wires": []
     },
@@ -1850,13 +1850,6 @@
                 "pt": "msg",
                 "to": "\"Thank you \" & payload.USER_ID & \" \" & $flowContext('coffeeMsg')",
                 "tot": "jsonata"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "coffeeMsgLang",
-                "tot": "flow"
             }
         ],
         "action": "",
@@ -2036,15 +2029,15 @@
         "order": 15,
         "width": "0",
         "height": "0",
-        "passthru": true,
+        "passthru": false,
         "mode": "text",
         "delay": "0",
         "topic": "topic",
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 150,
-        "y": 760,
+        "x": 370,
+        "y": 700,
         "wires": [
             [
                 "97da1cabef9d39e3"
@@ -2070,8 +2063,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 800,
+        "x": 610,
+        "y": 720,
         "wires": [
             []
         ]
@@ -2264,7 +2257,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1140,
+        "x": 1100,
         "y": 1560,
         "wires": []
     },
@@ -2328,7 +2321,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1140,
+        "x": 1100,
         "y": 1640,
         "wires": []
     },
@@ -2365,7 +2358,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1130,
+        "x": 1090,
         "y": 1720,
         "wires": []
     },
@@ -2402,7 +2395,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1130,
+        "x": 1090,
         "y": 1800,
         "wires": []
     },
@@ -2989,7 +2982,7 @@
         "z": "2f5fe38677691ef5",
         "name": "Say it in English",
         "group": "5bafb853165113e1",
-        "voice": "Google UK English Female",
+        "voice": "Google US English",
         "always": true,
         "x": 1120,
         "y": 980,
@@ -3007,7 +3000,7 @@
         "order": 13,
         "width": 0,
         "height": 0,
-        "passthru": true,
+        "passthru": false,
         "multiple": false,
         "options": [
             {
@@ -3030,8 +3023,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 120,
-        "y": 620,
+        "x": 380,
+        "y": 640,
         "wires": [
             [
                 "2a23a4c47a7f5697"
@@ -3057,7 +3050,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
+        "x": 630,
         "y": 620,
         "wires": [
             []
@@ -3068,8 +3061,8 @@
         "type": "switch",
         "z": "2f5fe38677691ef5",
         "name": "switch language",
-        "property": "topic",
-        "propertyType": "msg",
+        "property": "coffeeMsgLang",
+        "propertyType": "flow",
         "rules": [
             {
                 "t": "eq",
@@ -3116,12 +3109,12 @@
         "order": 14,
         "width": 0,
         "height": 0,
-        "passthru": true,
+        "passthru": false,
         "multiple": false,
         "options": [
             {
                 "label": "",
-                "value": "Free coffee next time",
+                "value": "free coffee next time",
                 "type": "str"
             },
             {
@@ -3134,8 +3127,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 150,
-        "y": 820,
+        "x": 370,
+        "y": 740,
         "wires": [
             [
                 "97da1cabef9d39e3"
@@ -3169,11 +3162,12 @@
         "topic": "",
         "payload": "english",
         "payloadType": "str",
-        "x": 170,
-        "y": 680,
+        "x": 150,
+        "y": 620,
         "wires": [
             [
-                "2a23a4c47a7f5697"
+                "2a23a4c47a7f5697",
+                "f6d501ab0b02f3bd"
             ]
         ]
     },
@@ -3194,11 +3188,12 @@
         "topic": "",
         "payload": "free coffee next time",
         "payloadType": "str",
-        "x": 170,
-        "y": 860,
+        "x": 150,
+        "y": 720,
         "wires": [
             [
-                "97da1cabef9d39e3"
+                "97da1cabef9d39e3",
+                "c9b3cff0ad0936d8"
             ]
         ]
     }
